@@ -1,23 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import matrixMovie from './matrix-movie.jpg';
+import fullMetalMovie from './fullmetal.png';
+import bleachMovie from './bleach-movie.jpg';
+import ironMan4Movie from './iron-man-4.jpg';
+import avengersEndgameMovie from './avengers-endgame.png';
+import blackPantherMovie from './black-panther.jpg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to Kodflix
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={matrixMovie}  alt="matrix movie" />
+        <img src={fullMetalMovie}  alt="full metal alchemist movie" />
+        <img src={bleachMovie}  alt="Bleach movie" />
+        <img src={ironMan4Movie} alt="Iron Man 4 movie" />
+        <img src={avengersEndgameMovie}  alt="Avengers Endgame movie" />
+        <img src={blackPantherMovie} alt="Black Panther movie" />
+        <h1>
+          6 Favorite Movies
+        </h1>
+ 
       </header>
     </div>
   );
