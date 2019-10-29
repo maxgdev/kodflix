@@ -20,3 +20,9 @@ img {
   flex: 1;
   /* height: 320px; */
 }
+
+@media only screen and (max-width: 600px) {
+  .flexContianer {
+    flex-direction: column;
+  }
+}
