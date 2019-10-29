@@ -12,35 +12,23 @@ function App() {
     <div className="App">
       <h1>Kodiri Kodflix App v0.01</h1>
       <div className="flexContianer">
-        <div className='flexItem'>
-          <img src={matrixMovie}  alt="matrix movie" />
-          <div className='overlay'>Matrix</div>
-        </div>
-        <div className='flexItem'>
-        <img src={fullMetalMovie}  alt="full metal alchemist movie" />
-          <div className='overlay'>Full Metal Alchemist</div>
-        </div>
-        <div className='flexItem'>
-        <img src={bleachMovie}  alt="Bleach movie" />
-          <div className='overlay'>Bleach</div>
-        </div>
+        <TvShow movieImage={matrixMovie} movieName='Matrix' />
+        <TvShow movieImage={fullMetalMovie} movieName='Full Metal Alchemist' />
+        <TvShow movieImage={bleachMovie} movieName='Bleach' />
       </div>
-      <div className="flexContianer">      
-        <div className='flexItem'>
-          <img src={ironMan4Movie} alt="Iron Man 4 movie" />
-          <div className='overlay'>Iron Man 4</div>
-        </div>
-        <div className='flexItem'>
-          <img src={avengersEndgameMovie}  alt="Avengers Endgame movie" />
-          <div className='overlay'>Avengers Endgame</div>
-        </div>
-        <div className='flexItem'>
-          <img src={blackPantherMovie} alt="Black Panther movie" />
-          <div className='overlay'>Black Panther</div>
-        </div>
+      <div className="flexContianer">
+        <TvShow movieImage={ironMan4Movie} movieName='Iron Man 4' />
+        <TvShow movieImage={avengersEndgameMovie} movieName='Avengers Endgame' />
+        <TvShow movieImage={blackPantherMovie} movieName='Black Panther' />
       </div>
     </div>
   );
 }
 
+function TvShow(props) {
+  return <div className='flexItem'>
+    <img src={props.movieImage} alt={props.movieName + ' movie'} />
+    <div className='overlay'>{props.movieName}</div>
+  </div>
+}
 export default App;
