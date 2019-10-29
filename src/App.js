@@ -14,29 +14,29 @@ function App() {
       <div className="flexContianer">
         <div className='flexItem'>
           <img src={matrixMovie}  alt="matrix movie" />
-          <h3>Matrix</h3>
+          <div className='overlay'>Matrix</div>
         </div>
         <div className='flexItem'>
         <img src={fullMetalMovie}  alt="full metal alchemist movie" />
-          <h3>Full Metal Alchemist</h3>
+          <div className='overlay'>Full Metal Alchemist</div>
         </div>
         <div className='flexItem'>
         <img src={bleachMovie}  alt="Bleach movie" />
-          <h3>Bleach</h3>
+          <div className='overlay'>Bleach</div>
         </div>
       </div>
       <div className="flexContianer">      
         <div className='flexItem'>
           <img src={ironMan4Movie} alt="Iron Man 4 movie" />
-          <h3>Iron Man 4</h3>
+          <div className='overlay'>Iron Man 4</div>
         </div>
         <div className='flexItem'>
           <img src={avengersEndgameMovie}  alt="Avengers Endgame movie" />
-          <h3>Iron Man 4</h3>
+          <div className='overlay'>Avengers Endgame</div>
         </div>
         <div className='flexItem'>
           <img src={blackPantherMovie} alt="Black Panther movie" />
-          <h3>Iron Man 4</h3>
+          <div className='overlay'>Black Panther</div>
         </div>
       </div>
     </div>
