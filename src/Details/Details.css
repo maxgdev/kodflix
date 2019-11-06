@@ -1,0 +1,10 @@
+.detailsContainer {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+}
+.item {
+    flex: 1;
+    align-self: baseline;
+}
