@@ -1,4 +1,5 @@
 import React from 'react';
+import TvShow from './TvShow/TvShow'
 import matrixMovie from './images/matrix-movie.jpg';
 import fullMetalMovie from './images/fullmetal.png';
 import bleachMovie from './images/bleach-movie.jpg';
@@ -23,12 +24,5 @@ function App() {
       </div>
     </div>
   );
-}
-
-function TvShow(props) {
-  return <div className='flexItem'>
-    <img src={props.movieImage} alt={props.movieName + ' movie'} />
-    <div className='overlay'>{props.movieName}</div>
-  </div>
 }
 export default App;
