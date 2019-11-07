@@ -11,15 +11,9 @@ body {
 img {
   width: 100%;
   height: 200px;
+  display: block;
 }
-
-.flexContianer {
-  display: flex;
-  flex-direction: row;
-}
-
-@media only screen and (max-width: 600px) {
-  .flexContianer {
-    flex-direction: column;
-  }
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
