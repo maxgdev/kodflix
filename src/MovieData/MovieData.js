@@ -18,8 +18,8 @@ let movieData = [
 
 
 export default function MovieFn() {
-    return movieData.map(movie => {
-        return <TvShow id={movie.id} movieImage={movie.img} movieName={movie.title} />
-    });
+    return movieData.map(movie => (
+        <TvShow key={movie.id} id={movie.id} movieImage={movie.img} movieName={movie.title} />
+     ));
   }
 //   export default movieData;
