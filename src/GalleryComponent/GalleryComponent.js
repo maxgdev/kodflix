@@ -12,9 +12,9 @@ export default function GalleryComponent() {
       <div>
         <h1>Kodiri Kodflix App v0.01</h1>
         <div className="flexContianer">
-          <TvShow movieImage={matrixMovie} movieName='Matrix' />
-          <TvShow movieImage={fullMetalMovie} movieName='Full Metal Alchemist' />
-          <TvShow movieImage={bleachMovie} movieName='Bleach' />
+          <TvShow id='matrix' movieImage={matrixMovie} movieName='Matrix' />
+          <TvShow  id='fullMetal' movieImage={fullMetalMovie} movieName='Full Metal Alchemist' />
+          <TvShow  id='bleach' movieImage={bleachMovie} movieName='Bleach' />
         </div>
         <div className="flexContianer">
           <TvShow movieImage={ironMan4Movie} movieName='Iron Man 4' />
