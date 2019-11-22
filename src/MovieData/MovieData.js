@@ -16,7 +16,6 @@ let movieData = [
     {title: 'Black Panther', img:blackPantherMovie, id:'blackPanther'}
 ];
 
-
 export default function MovieFn() {
     return movieData.map(movie => (
         <TvShow key={movie.id} id={movie.id} movieImage={movie.img} movieName={movie.title} />
