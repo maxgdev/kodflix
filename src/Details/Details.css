@@ -3,6 +3,7 @@
     width: 80%;
     flex-direction: column;
     text-align: center;
+    margin: 0 auto;
 }
 .item {
     flex: 1;
