@@ -5,7 +5,7 @@ import MoviesData from '../MovieData/MovieData';
 export default function GalleryComponent() {
   return (
     <div>
-      <h1>Kodiri Kodflix App v0.01</h1>
+      <h1>Kodiri Kodflix App</h1>
       <div className="container">
         <MoviesFn data={MoviesData}/>
       </div>

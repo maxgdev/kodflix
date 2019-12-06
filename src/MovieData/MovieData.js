@@ -12,7 +12,7 @@ let movieData = [
     {title: 'Full Metal Alchemist', img:fullMetalMovie, id:'fullMetal'},
     {title: 'Bleach', img:bleachMovie, id:'bleach'},
     {title: 'Iron Man 4', img:ironMan4Movie, id:'ironMan4'},
-    {title: 'Avenges Endgame', img:avengersEndgameMovie, id:'avengersEndgame'},
+    {title: 'Avengers Endgame', img:avengersEndgameMovie, id:'avengersEndgame'},
     {title: 'Black Panther', img:blackPantherMovie, id:'blackPanther'}
 ];
 
@@ -21,4 +21,3 @@ export default function MovieFn() {
         <TvShow key={movie.id} id={movie.id} movieImage={movie.img} movieName={movie.title} />
      ));
   }
-//   export default movieData;
