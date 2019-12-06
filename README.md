@@ -6,11 +6,11 @@ We were tasked with reading the requirements and building the app to meet each s
 
 We used github for version control. Github was also the basis for peer/coach review.
 
-### `What technologies the project use?`
-React - frontend
-Nodejs - backend
-Db - NoSQL MongoDb
-VC - github
+### `What technologies did the project use?`
+1. React - frontend
+1. Nodejs - backend
+1. Db - NoSQL MongoDb
+1. VC - github
 
 ### `Where is the live demo?`
 
