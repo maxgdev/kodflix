@@ -19,8 +19,18 @@ export default function Details() {
         let movieObj = mData.find((movie) => {
         console.log('movie.id: '+movie.id +' details: ' + details)
         return movie.id === details;
+        // return movie.id === details;
         });
-        setMovie(movieObj);
+        debugger
+        if (movieObj === undefined) { 
+          setMessage("Ooops, it looks like this page doesn't exist :(");
+          setMovie({});
+        } else {
+          setMessage(`The movie you selected is ${movieObj.title}`)
+          setMovie(movieObj);
+        }
+
+
     }, []);
     return (
       <div className='detailsContainer'>
