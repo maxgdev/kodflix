@@ -10,23 +10,18 @@ export default class Details extends Component {
       movie: {}
     };
   }
-
   componentDidMount() {
-    
     let details = this.props.match.params.details;
     let movie = getMovies()
       .find((movie) => movie.id === details);
     this.setState({ movie });
   }
   render() {
-    
     if(this.state.movie === undefined) {
-      
       return <Redirect to='/not-found' />
     } else {
       return (
         <div>
-          
           <h1>{this.state.movie.title}</h1>
           <Link to='/'>Back to Home Page</Link>
         </div>
