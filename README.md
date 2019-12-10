@@ -14,5 +14,4 @@ We used github for version control. Github was also the basis for peer/coach rev
 
 ### `Where is the live demo?`
 
-The live demo will be hosted on heroku. 
-Coming soon...
+The live demo will be hosted on heroku: https://kodflix-maxgdev.herokuapp.com/
