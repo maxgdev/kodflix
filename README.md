@@ -11,6 +11,7 @@ We used github for version control. Github was also the basis for peer/coach rev
 * Nodejs - backend
 * Db - NoSQL MongoDb
 * VC - github
+* Hosting - Heroku
 
 ### `Where is the live demo?`
 
