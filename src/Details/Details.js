@@ -23,8 +23,14 @@ export default class Details extends Component {
       return (
         <div>
           <h1>{this.state.movie.title}</h1>
-          <img src={this.state.movie.img} alt={this.state.movie.img + ' movie'} />
-          <p>{this.state.movie.synopsis}</p>
+          <div className='detailsContainer'>
+            <div className='detailsSynopsis'>
+              <p>{this.state.movie.synopsis}</p>
+            </div>
+            <div className='detailsImage'>
+            <img src={this.state.movie.img} alt={this.state.movie.img + ' movie'} />
+            </div>
+          </div>
           <Link to='/'>Back to Home Page</Link>
         </div>
       )

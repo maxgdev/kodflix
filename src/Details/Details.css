@@ -5,7 +5,32 @@
     text-align: center;
     margin: 0 auto;
 }
+
 .item {
     flex: 1;
     align-self: baseline;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.detailsImage, .detailsSynopsis {
+    flex: 1;
+}
+
+.detailsImage {
+    padding: 0 15px;
+}
+
+.detailsSynopsis {
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .detailsContainer {
+        display: block;
+    }
 }
