@@ -1,20 +1,17 @@
 .detailsContainer {
     display: flex;
     width: 80%;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-direction: row;
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item {
     flex: 1;
     align-self: baseline;
-}
-
-.detailsContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
 }
 
 .detailsImage, .detailsSynopsis {
@@ -23,6 +20,7 @@
 
 .detailsImage {
     padding: 0 15px;
+    max-width: 600px;
 }
 
 .detailsSynopsis {
