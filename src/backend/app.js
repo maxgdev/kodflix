@@ -1,7 +1,8 @@
 const express = require('express')
 const getmovies = require('./getmovies');
 const app = express();
-const port = process.env || 3001;
+const path = require('path');
+const port = process.env.PORT || 3001;
 
 app.use(express.static(path.join(__dirname, '../../build')));
 app.get('*', function (req, res) {
@@ -9,4 +10,4 @@ app.get('*', function (req, res) {
 });
 app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/rest/shows', (req, res) => res.send(getmovies()))
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
