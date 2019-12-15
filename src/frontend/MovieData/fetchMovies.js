@@ -4,7 +4,7 @@ export default function FetchMovies() {
     const [ movies, setMovies ] = useState([]);
 
     useEffect(() => {
-        console.log('Console.log: useEffect has run');
+        // console.log('Console.log: useEffect has run');
         const getCountries = async () => {
             const response = await fetch('/rest/shows');
             const jsonResponse = await response.json();
