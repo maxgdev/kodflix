@@ -16,3 +16,9 @@ We used github for version control. Github was also the basis for peer/coach rev
 ### `Where is the live demo?`
 
 The live demo will be hosted on heroku: https://kodflix-maxgdev.herokuapp.com/
+
+### `Deployment Notes\Links`
+Redeploy Heroku app without code changes
+https://stackoverflow.com/questions/41345744/redeploy-heroku-app-without-code-changes
+git commit --allow-empty -m "Trigger Heroku redeployment after ...your comment"
+git push heroku master

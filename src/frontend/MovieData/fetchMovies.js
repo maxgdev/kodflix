@@ -1,28 +1,18 @@
 import React, { useEffect, useState } from "react";
 
 export default function FetchMovies() {
-    const [ movies, setMovies ] = useState([]);
-
+    
+    const fetchedMovies = {};
     useEffect(() => {
-        // console.log('Console.log: useEffect has run');
-        const getCountries = async () => {
-            const response = await fetch('/rest/shows');
+        console.log('Console.log: useEffect has run');
+        const getMovies = async () => {
+            // const response = await fetch('/rest/shows');
+            const response = await fetch('http://localhost:3001/rest/shows');
             const jsonResponse = await response.json();
             console.log(jsonResponse);
-            setMovies(jsonResponse);
         }
-        getCountries();
+        fetchedMovies = getMovies();
     }, []);
 
-return (
-    <div className='App'>
-        <ul>
-            {
-                movies.map(movie => {
-                   return  <li key={movie.id}>{movie.title}</li>
-                })
-            }
-        </ul>
-    </div>
-);
+return null;
 }

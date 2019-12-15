@@ -14,10 +14,10 @@
   },
   "scripts": {
     "start": "npm run _start-backend",
-    "postinstall": "react-scripts build",
     "start-dev": "npm-run-all -p  _start-frontend _start-backend",
     "_start-frontend": "react-scripts start",
-    "_start-backend": "node ./src/backend/app.js",
+    "_start-backend": "nodemon ./src/backend/app.js",
+    "postinstall": "react-scripts build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
