@@ -13,6 +13,8 @@
     "react-scripts": "^3.3.0"
   },
   "scripts": {
+    "start": "npm run _start-backend",
+    "postinstall": "react-scripts build",
     "start-dev": "npm-run-all -p  start start-backend",
     "start-frontend": "react-scripts start",
     "start-backend": "nodemon ./src/backend/app.js",
